@@ -23,6 +23,6 @@ app.post("/", (req, res)=>{
     res.redirect("/");
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 9000 , ()=>{
     console.log("le serveur a démaré");
 });
